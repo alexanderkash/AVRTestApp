@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		655960D72953313200FE44DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655960D62953313200FE44DE /* AppDelegate.swift */; };
+		655960D92953313200FE44DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655960D82953313200FE44DE /* SceneDelegate.swift */; };
+		655960E02953313300FE44DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655960DF2953313300FE44DE /* Assets.xcassets */; };
+		655960E32953313300FE44DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655960E12953313300FE44DE /* LaunchScreen.storyboard */; };
+		655960EC295331AE00FE44DE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 655960EB295331AE00FE44DE /* SnapKit */; };
+		655960EF295331DC00FE44DE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 655960EE295331DC00FE44DE /* Kingfisher */; };
+		655960F6295332F600FE44DE /* TopGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655960F5295332F600FE44DE /* TopGamesViewController.swift */; };
+		655960FE295335F100FE44DE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655960FD295335F100FE44DE /* NetworkService.swift */; };
+		655961012953402900FE44DE /* TopGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655961002953402900FE44DE /* TopGames.swift */; };
+		6559610429534B2700FE44DE /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559610329534B2700FE44DE /* GameCell.swift */; };
+		65596107295363D600FE44DE /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65596106295363D600FE44DE /* Stream.swift */; };
+		6559610A295373AE00FE44DE /* StreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65596109295373AE00FE44DE /* StreamsViewController.swift */; };
+		6559610C295374E600FE44DE /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559610B295374E600FE44DE /* StreamCell.swift */; };
+		65BA445F295382D500D78AF8 /* ContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA445E295382D500D78AF8 /* ContentLoader.swift */; };
+		65BA44622953B31500D78AF8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 65BA44612953B31500D78AF8 /* RealmSwift */; };
+		65BA44642953B33800D78AF8 /* TopGamesRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA44632953B33800D78AF8 /* TopGamesRealm.swift */; };
+		65BA44662953B7B600D78AF8 /* StreamsRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA44652953B7B600D78AF8 /* StreamsRealm.swift */; };
+		65BA44682953B9B800D78AF8 /* RealmStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BA44672953B9B800D78AF8 /* RealmStorageService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		655960D32953313200FE44DE /* ARVTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARVTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		655960D62953313200FE44DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		655960D82953313200FE44DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		655960DF2953313300FE44DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		655960E22953313300FE44DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		655960E42953313300FE44DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655960F5295332F600FE44DE /* TopGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesViewController.swift; sourceTree = "<group>"; };
+		655960FD295335F100FE44DE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		655961002953402900FE44DE /* TopGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGames.swift; sourceTree = "<group>"; };
+		6559610329534B2700FE44DE /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		65596106295363D600FE44DE /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		65596109295373AE00FE44DE /* StreamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsViewController.swift; sourceTree = "<group>"; };
+		6559610B295374E600FE44DE /* StreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
+		65BA445E295382D500D78AF8 /* ContentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoader.swift; sourceTree = "<group>"; };
+		65BA44632953B33800D78AF8 /* TopGamesRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesRealm.swift; sourceTree = "<group>"; };
+		65BA44652953B7B600D78AF8 /* StreamsRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsRealm.swift; sourceTree = "<group>"; };
+		65BA44672953B9B800D78AF8 /* RealmStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorageService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		655960D02953313200FE44DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BA44622953B31500D78AF8 /* RealmSwift in Frameworks */,
+				655960EF295331DC00FE44DE /* Kingfisher in Frameworks */,
+				655960EC295331AE00FE44DE /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		655960CA2953313200FE44DE = {
+			isa = PBXGroup;
+			children = (
+				655960D52953313200FE44DE /* ARVTestApp */,
+				655960D42953313200FE44DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		655960D42953313200FE44DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				655960D32953313200FE44DE /* ARVTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		655960D52953313200FE44DE /* ARVTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				6559610229534B0700FE44DE /* Views */,
+				655960FF2953400400FE44DE /* Model */,
+				655960FC295335D600FE44DE /* Services */,
+				655960D62953313200FE44DE /* AppDelegate.swift */,
+				655960D82953313200FE44DE /* SceneDelegate.swift */,
+				655960DF2953313300FE44DE /* Assets.xcassets */,
+				655960E12953313300FE44DE /* LaunchScreen.storyboard */,
+				655960E42953313300FE44DE /* Info.plist */,
+			);
+			path = ARVTestApp;
+			sourceTree = "<group>";
+		};
+		655960FC295335D600FE44DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				65BA445E295382D500D78AF8 /* ContentLoader.swift */,
+				655960FD295335F100FE44DE /* NetworkService.swift */,
+				65BA44672953B9B800D78AF8 /* RealmStorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		655960FF2953400400FE44DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				655961002953402900FE44DE /* TopGames.swift */,
+				65596106295363D600FE44DE /* Stream.swift */,
+				65BA44632953B33800D78AF8 /* TopGamesRealm.swift */,
+				65BA44652953B7B600D78AF8 /* StreamsRealm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6559610229534B0700FE44DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65596105295363AA00FE44DE /* TopGames */,
+				655961082953739500FE44DE /* Streams */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65596105295363AA00FE44DE /* TopGames */ = {
+			isa = PBXGroup;
+			children = (
+				655960F5295332F600FE44DE /* TopGamesViewController.swift */,
+				6559610329534B2700FE44DE /* GameCell.swift */,
+			);
+			path = TopGames;
+			sourceTree = "<group>";
+		};
+		655961082953739500FE44DE /* Streams */ = {
+			isa = PBXGroup;
+			children = (
+				65596109295373AE00FE44DE /* StreamsViewController.swift */,
+				6559610B295374E600FE44DE /* StreamCell.swift */,
+			);
+			path = Streams;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		655960D22953313200FE44DE /* ARVTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 655960E72953313300FE44DE /* Build configuration list for PBXNativeTarget "ARVTestApp" */;
+			buildPhases = (
+				655960CF2953313200FE44DE /* Sources */,
+				655960D02953313200FE44DE /* Frameworks */,
+				655960D12953313200FE44DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARVTestApp;
+			packageProductDependencies = (
+				655960EB295331AE00FE44DE /* SnapKit */,
+				655960EE295331DC00FE44DE /* Kingfisher */,
+				65BA44612953B31500D78AF8 /* RealmSwift */,
+			);
+			productName = ARVTestApp;
+			productReference = 655960D32953313200FE44DE /* ARVTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		655960CB2953313200FE44DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					655960D22953313200FE44DE = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 655960CE2953313200FE44DE /* Build configuration list for PBXProject "ARVTestApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 655960CA2953313200FE44DE;
+			packageReferences = (
+				655960EA295331AE00FE44DE /* XCRemoteSwiftPackageReference "SnapKit" */,
+				655960ED295331DC00FE44DE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				65BA44602953B31500D78AF8 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 655960D42953313200FE44DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				655960D22953313200FE44DE /* ARVTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		655960D12953313200FE44DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655960E32953313300FE44DE /* LaunchScreen.storyboard in Resources */,
+				655960E02953313300FE44DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		655960CF2953313200FE44DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6559610A295373AE00FE44DE /* StreamsViewController.swift in Sources */,
+				655960D72953313200FE44DE /* AppDelegate.swift in Sources */,
+				65BA44662953B7B600D78AF8 /* StreamsRealm.swift in Sources */,
+				655960FE295335F100FE44DE /* NetworkService.swift in Sources */,
+				65596107295363D600FE44DE /* Stream.swift in Sources */,
+				655960F6295332F600FE44DE /* TopGamesViewController.swift in Sources */,
+				6559610429534B2700FE44DE /* GameCell.swift in Sources */,
+				655960D92953313200FE44DE /* SceneDelegate.swift in Sources */,
+				655961012953402900FE44DE /* TopGames.swift in Sources */,
+				65BA44682953B9B800D78AF8 /* RealmStorageService.swift in Sources */,
+				6559610C295374E600FE44DE /* StreamCell.swift in Sources */,
+				65BA44642953B33800D78AF8 /* TopGamesRealm.swift in Sources */,
+				65BA445F295382D500D78AF8 /* ContentLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		655960E12953313300FE44DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				655960E22953313300FE44DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		655960E52953313300FE44DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		655960E62953313300FE44DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		655960E82953313300FE44DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T824RZ25Y6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARVTestApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cp.ARVTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		655960E92953313300FE44DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T824RZ25Y6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARVTestApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cp.ARVTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		655960CE2953313200FE44DE /* Build configuration list for PBXProject "ARVTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				655960E52953313300FE44DE /* Debug */,
+				655960E62953313300FE44DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		655960E72953313300FE44DE /* Build configuration list for PBXNativeTarget "ARVTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				655960E82953313300FE44DE /* Debug */,
+				655960E92953313300FE44DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		655960EA295331AE00FE44DE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		655960ED295331DC00FE44DE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		65BA44602953B31500D78AF8 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		655960EB295331AE00FE44DE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 655960EA295331AE00FE44DE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		655960EE295331DC00FE44DE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 655960ED295331DC00FE44DE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		65BA44612953B31500D78AF8 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65BA44602953B31500D78AF8 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 655960CB2953313200FE44DE /* Project object */;
+}
